@@ -9,7 +9,7 @@ class QuickSorter
 		pivot = list[0]
 		
 		if (pivot > list[1])
-			return [list[1], pivot]
+			swap(list,0,1)
 		end
 			
 		list
