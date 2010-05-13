@@ -1,5 +1,6 @@
 require 'spec'
-require 'quicksorter'
+require 'spec/autorun'
+require 'lib/quicksorter.rb'
 
 describe QuickSorter do
 	
