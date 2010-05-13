@@ -8,4 +8,8 @@ describe QuickSorter do
 		QuickSorter.sort([]).should == []
 	end
 	
+	it 'should order the unary list' do
+		QuickSorter.sort([1]).should == [1]
+	end
+	
 end
