@@ -2,9 +2,13 @@ class QuickSorter
 	
 	def self.sort(list)
 		unless (list.size < 2)
-			if (list[0] > list[1])
-				swap(list,0,1)
+			
+			pivot = list[0]
+			
+			if (pivot > list[1])
+				return [list[1], pivot]
 			end
+			
 		end
 		list
 	end
