@@ -12,4 +12,9 @@ describe QuickSorter do
 		QuickSorter.sort([1]).should == [1]
 	end
 	
+	it 'should order the ordered list' do
+		QuickSorter.sort([1,2,3]).should == [1,2,3]
+	end
+	
+	
 end
