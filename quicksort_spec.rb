@@ -1,7 +1,5 @@
 require 'spec'
-
-class QuickSorter
-end
+require 'quicksorter'
 
 describe QuickSorter do
 end

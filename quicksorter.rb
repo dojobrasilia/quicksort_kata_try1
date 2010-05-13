@@ -1,0 +1,2 @@
+class QuickSorter
+end
