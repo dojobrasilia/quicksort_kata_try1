@@ -16,8 +16,12 @@ describe QuickSorter do
 		QuickSorter.sort([1,2,3]).should == [1,2,3]
 	end
 	
-	it 'should swap the two only out of order elements' do
+	it 'should swap the two only out-of-order elements' do
 		QuickSorter.sort([2,1]).should == [1,2]
+	end
+	
+	it 'should swap the two first elements' do
+		QuickSorter.sort([2,1,3]).should == [1,2,3]
 	end
 	
 end
