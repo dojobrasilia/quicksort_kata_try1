@@ -1,0 +1,10 @@
+It's my first try to TDD a quicksort.
+
+I've tried to refactor to the quicksort algorithm in the first early test cases.
+
+(I've recognized two approaches: 
+
+ 1 - test the efficiency and rewrite the code in the end
+ 2 - refactor to the solution intentionally while it's been coded
+
+I've tried the second one here)
