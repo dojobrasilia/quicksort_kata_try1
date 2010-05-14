@@ -1,21 +1,22 @@
 class QuickSorter
 	
-	def self.sort(list)
-
+	def self.sort(list,s=0,e=list.size-1)
+	
 		if (list.size < 2)
 			return list
 		end
 			
-		mid_point = (list.size/2).to_i
-		pivot = list[mid_point]
-		
-		partition(list, pivot)
+		partition(list, e, s)
 		
 		list
 		
 	end
 
-	def self.partition(list, pivot) 
+	def self.partition(list, e, s) 
+
+		mid_point = ((e-s+1)/2).to_i
+		pivot = list[mid_point]
+
 		desc_scanner = (list.size-1)
 		asc_scanner = 0
 		
