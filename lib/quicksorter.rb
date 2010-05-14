@@ -9,8 +9,7 @@ class QuickSorter
 		mid_point = list.size/2 - 1
 		pivot = list[mid_point]
 		
-		high = (list.size-1)
-		desc_scanner = high
+		desc_scanner = (list.size-1)
 		while desc_scanner>0 and list[desc_scanner]>pivot do
 			desc_scanner-=1
 		end
