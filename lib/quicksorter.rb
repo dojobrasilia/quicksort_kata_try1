@@ -17,12 +17,7 @@ class QuickSorter
 		
 		desc_scanner = i # first element from right to left that is less than or equal to pivot
 		asc_scanner = 0 # first element from left to right that is grater than or equal to pivot
-		
-		if (list[desc_scanner] >= pivot)
-			desc_scanner = 0
-			asc_scanner = 0
-		end
-			
+					
 		if (desc_scanner > asc_scanner)
 			swap(list,asc_scanner,desc_scanner)
 		end
