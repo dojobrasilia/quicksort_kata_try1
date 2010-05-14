@@ -12,9 +12,9 @@ class QuickSorter
 		desc_scanner = 1
 		asc_scanner = 0
 		
-		unless (pivot > list[desc_scanner])
+		if (list[desc_scanner] >= pivot)
 			desc_scanner = 0
-			asc_scanner = 0			
+			asc_scanner = 0	
 		end
 			
 		if (desc_scanner > asc_scanner)
