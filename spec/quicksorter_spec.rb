@@ -41,6 +41,10 @@ describe QuickSorter do
 
 	end
 
+	it 'should make a partition that needs more than one swap' do
+		QuickSorter.sort([5,4,3,2,1]).should == [1,2,3,4,5]
+	end
+
 
 	
 end
