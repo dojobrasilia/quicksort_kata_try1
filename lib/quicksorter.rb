@@ -9,7 +9,13 @@ class QuickSorter
 		mid_point = list.size/2 - 1
 		pivot = list[mid_point]
 		
-		desc_scanner = 1 # first element from right to left that is less than or equal to pivot
+		high = (list.size-1)
+		i = high
+		while i>0 and list[i]>pivot do
+			i-=1
+		end
+		
+		desc_scanner = i # first element from right to left that is less than or equal to pivot
 		asc_scanner = 0 # first element from left to right that is grater than or equal to pivot
 		
 		if (list[desc_scanner] >= pivot)
