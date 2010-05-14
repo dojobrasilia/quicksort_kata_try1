@@ -8,8 +8,9 @@ class QuickSorter
 			
 		pivot = list[0]
 		
-		if (pivot > list[1])
-			swap(list,0,1)
+		pivot_position = 1
+		if (pivot > list[pivot_position])
+			swap(list,0,pivot_position)
 		end
 			
 		list
