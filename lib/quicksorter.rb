@@ -8,7 +8,7 @@ class QuickSorter
 			
 		pivot_index = partition(list, s, e)
 		sort(list, s, pivot_index-1)
-		# sort(list, pivot_index, e)
+		sort(list, pivot_index+1, e)
 		list
 		
 	end
@@ -20,16 +20,16 @@ class QuickSorter
 		mid_point = (list_size/2).to_i + s
 		pivot = list[mid_point]
 
-		desc_scanner = (list_size-1)
-		asc_scanner = 0
+		desc_scanner = e
+		asc_scanner = s
 		
 		while(desc_scanner > asc_scanner)
 			
-			while desc_scanner>0 and list[desc_scanner]>pivot do
+			while desc_scanner>s and list[desc_scanner]>pivot do
 				desc_scanner -= 1
 			end
 		
-			while asc_scanner<(list_size-1) and list[asc_scanner]<pivot do
+			while asc_scanner<e and list[asc_scanner]<pivot do
 				asc_scanner += 1
 			end
 					
