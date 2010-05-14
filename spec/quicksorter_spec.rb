@@ -45,6 +45,8 @@ describe QuickSorter do
 		QuickSorter.sort([5,4,3,2,1]).should == [1,2,3,4,5]
 	end
 
-
+	it 'should make two partitions' do
+		QuickSorter.sort([2,3,1]).should == [1,2,3]
+	end
 	
 end
