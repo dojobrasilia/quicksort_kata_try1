@@ -28,5 +28,19 @@ describe QuickSorter do
 		QuickSorter.sort([1,3,2]).should == [1,2,3]
 	end
 
+	it 'should order three element when it needs only one partition' do
+		QuickSorter.sort([1,2,3]).should == [1,2,3]
+		QuickSorter.sort([1,3,2]).should == [1,2,3]
+		
+		QuickSorter.sort([2,1,3]).should == [1,2,3]
+		QuickSorter.sort([3,2,1]).should == [1,2,3]
+
+		# these need two partitions
+		# QuickSorter.sort([2,3,1]).should == [1,2,3]
+		# QuickSorter.sort([3,1,2]).should == [1,2,3]
+
+	end
+
+
 	
 end
