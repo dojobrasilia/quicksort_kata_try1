@@ -14,10 +14,12 @@ class QuickSorter
 
 	def self.partition(list, e, s) 
 
-		mid_point = ((e-s+1)/2).to_i
+		list_size = (e-s+1)
+
+		mid_point = (list_size/2).to_i
 		pivot = list[mid_point]
 
-		desc_scanner = (list.size-1)
+		desc_scanner = (list_size-1)
 		asc_scanner = 0
 		
 		while(desc_scanner > asc_scanner)
@@ -26,7 +28,7 @@ class QuickSorter
 				desc_scanner -= 1
 			end
 		
-			while asc_scanner<(list.size-1) and list[asc_scanner]<pivot do
+			while asc_scanner<(list_size-1) and list[asc_scanner]<pivot do
 				asc_scanner += 1
 			end
 					
