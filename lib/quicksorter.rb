@@ -9,6 +9,13 @@ class QuickSorter
 		mid_point = (list.size/2).to_i
 		pivot = list[mid_point]
 		
+		partition(list, pivot)
+		
+		list
+		
+	end
+
+	def self.partition(list, pivot) 
 		desc_scanner = (list.size-1)
 		asc_scanner = 0
 		
@@ -27,9 +34,6 @@ class QuickSorter
 			end
 			
 		end
-		
-		list
-		
 	end
 
 	def self.swap(list, i, j)
