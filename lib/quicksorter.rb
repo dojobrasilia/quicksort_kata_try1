@@ -6,7 +6,8 @@ class QuickSorter
 			return list
 		end
 			
-		pivot = list[0]
+		mid_point = list.size/2 - 1
+		pivot = list[mid_point]
 		
 		desc_scanner = 1
 		asc_scanner = 0
