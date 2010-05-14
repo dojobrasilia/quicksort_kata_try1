@@ -14,7 +14,10 @@ class QuickSorter
 			desc_scanner -= 1
 		end
 		
-		asc_scanner = 0 # first element from left to right that is greater than or equal to pivot
+		asc_scanner = 0
+		while asc_scanner<(list.size-1) and list[asc_scanner]<pivot do
+			asc_scanner += 1
+		end
 					
 		if (desc_scanner > asc_scanner)
 			swap(list,asc_scanner,desc_scanner)
